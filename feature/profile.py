@@ -1,1 +1,1 @@
-print("This is a profile page") 
+print("This is a profile page")

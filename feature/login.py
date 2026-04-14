@@ -1,1 +1,1 @@
-print("This is a login method")
+print("This is a login page")

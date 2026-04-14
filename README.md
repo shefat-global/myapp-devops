@@ -87,6 +87,23 @@ To rename a local branch:
 git branch -m old-branch-name new-branch-name
 ```
 
+Merge vs Rebase:
+----------------
+- **Merge**: Combines two branches into one, preserving all commits. Creates a new merge commit, and the history is non-linear.
+  - **Use when**: You want to keep a complete history with merge points.
+
+- **Rebase**: Rewrites commit history by "replaying" your commits on top of another branch, resulting in a linear history without merge commits.
+  - **Use when**: You want a clean, linear history before merging a feature branch.
+
+Squash & Reword:
+----------------
+- **Squash**: Combines multiple commits into one. This is useful for cleaning up commit history before merging.
+  - **Use when**: You have many small commits that should logically be grouped together as one.
+
+- **Reword**: Allows you to change the commit message of a previous commit without altering the content of the commit itself.
+  - **Use when**: You want to fix or improve a commit message.
+
+
 #### Merge a Branch
 To merge changes from another branch into the `main` branch:
 ```bash
